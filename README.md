@@ -24,7 +24,7 @@ uv sync
 
 ### 3. Install the required browsers
 ```bash
-playwright install
+uv run playwright install
 ```
 
 ### 4. Copy the environment example file to environment file
@@ -42,22 +42,22 @@ cp .env.example .env
 
 ### Run all smoke tests headless
 ```bash
-uv run pytest test_smoke.py
+uv run pytest tests/test_smoke.py
 ```
 
 ### Run all smoke tests in chrome browser
 ```bash
-uv run pytest --headed --browser-channel chrome test_smoke.py
+uv run pytest --headed --browser-channel chrome tests/test_smoke.py
 ```
 
 ### Run one of the smoke tests
 ```bash
-uv run pytest test_smoke.py::test_fill_and_submit_reserve_appointment_page
+uv run pytest tests/test_smoke.py::test_fill_and_submit_reserve_appointment_page
 ```
 
 ### Run tests passing command line parameters
 ```bash
-uv run pytest test_smoke.py --LOGIN_URL=https://myezra-staging.ezra.com/ --LOGIN_USERNAME=your_email@example.com LOGIN_PASSWORD=your_password_here
+uv run pytest tests/test_smoke.py --LOGIN_URL=https://myezra-staging.ezra.com/ --LOGIN_USERNAME=your_email@example.com LOGIN_PASSWORD=your_password_here
 ```
 
 ### Run tests from pytest.ini 
