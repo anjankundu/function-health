@@ -1,14 +1,14 @@
 import pytest
-from playwright.sync_api import expect
-
-from pages.select_scan_page import SelectScanPage
-from pages.schedule_scan_page import ScheduleScanPage
 from pages.reserve_appointment_page import ReserveAppointmentPage
 from pages.scan_confirmation_page import ScanConfirmationPage
+from pages.schedule_scan_page import ScheduleScanPage
+from pages.select_scan_page import SelectScanPage
+from playwright.sync_api import expect
 from utils.home import click_book_a_scan_button
-from utils.select_scan import fill_and_submit_select_scan_page
-from utils.schedule_scan import fill_and_submit_schedule_scan_page
 from utils.reserve_appointment import fill_and_submit_reserve_appointment_page
+from utils.schedule_scan import fill_and_submit_schedule_scan_page
+from utils.select_scan import fill_and_submit_select_scan_page
+
 
 @pytest.mark.high
 def test_book_a_scan_button(ui_login):

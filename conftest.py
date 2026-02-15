@@ -7,7 +7,6 @@ from playwright.sync_api import Page
 from pages.home_page import HomePage
 from pages.sign_in_page import SignInPage
 
-
 load_dotenv()
 
 
@@ -27,7 +26,9 @@ def pytest_addoption(parser):
     )
 
 
-def _get_required_value(request: pytest.FixtureRequest, cli_name: str, env_name: str) -> str:
+def _get_required_value(
+    request: pytest.FixtureRequest, cli_name: str, env_name: str
+) -> str:
     """Get configuration from environment (preferred) or CLI, failing clearly if missing."""
     value = os.getenv(env_name)
     if value:

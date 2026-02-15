@@ -10,7 +10,7 @@ class HomePage(BasePage):
         super().__init__(page)
         self.page_title = self.page.locator(".section-header").first
         self.book_a_scan_button = self.page.get_by_role("button", name="Book a scan")
-        self.sign_out_button =  self.page.get_by_role("button", name="Sign out")
+        self.sign_out_button = self.page.get_by_role("button", name="Sign out")
 
     def wait_for_loaded(self) -> None:
         """Wait until the home page is fully loaded."""

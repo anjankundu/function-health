@@ -1,6 +1,5 @@
-from playwright.sync_api import Page
-
 from pages.schedule_scan_page import ScheduleScanPage
+from playwright.sync_api import Page
 
 
 def fill_and_submit_schedule_scan_page(page: Page) -> None:

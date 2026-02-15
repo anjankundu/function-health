@@ -1,8 +1,7 @@
 from urllib.parse import urlparse
 
-from playwright.sync_api import Page
-
 from pages.home_page import HomePage
+from playwright.sync_api import Page
 
 
 def _home_url(page: Page) -> str:

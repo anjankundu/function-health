@@ -1,6 +1,6 @@
+from pages.select_scan_page import SelectScanPage
 from playwright.sync_api import Page
 
-from pages.select_scan_page import SelectScanPage
 from utils.enums import SelectScanPageDefaults
 
 

@@ -8,7 +8,9 @@ class ScanConfirmationPage(BasePage):
 
     def __init__(self, page: Page):
         super().__init__(page)
-        self.begin_medical_questionnaire_button = self.page.get_by_role("button", name="Begin Medical Questionnaire")
+        self.begin_medical_questionnaire_button = self.page.get_by_role(
+            "button", name="Begin Medical Questionnaire"
+        )
 
     def wait_for_loaded(self) -> None:
         """Wait until "Scan confirmation" page is fully loaded."""
