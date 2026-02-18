@@ -5,7 +5,7 @@ Smoke tests for Function Health booking flow.
 
 ## [Take home assignment](https://github.com/anjankundu/function-health/blob/main/Function%20Health%20Take%20Home%20Assignment%20-%20Anjan%20Kundu.pdf)
 
-## Tests implemented
+## Tests automated
 * Click **Book a scan** button
 * Navigate through **Select your scan** page, fill fields and submit
 * Navigate through **Schedule your scan** page, fill fields and submit
