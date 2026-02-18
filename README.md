@@ -3,12 +3,13 @@
 ## Overview
 Smoke tests for Function Health booking flow.
 
+## [Take home assignment](https://github.com/anjankundu/function-health/blob/main/Function%20Health%20Take%20Home%20Assignment%20-%20Anjan%20Kundu.pdf)
+
 ## Tests implemented
 * Click **Book a scan** button
 * Navigate through **Select your scan** page, fill fields and submit
 * Navigate through **Schedule your scan** page, fill fields and submit
 * Navigate through **Reserve your appointment** page, fill fields and submit
-
 
 ## Getting Started
 
@@ -36,7 +37,6 @@ cp .env.example .env
 * LOGIN_URL
 * LOGIN_USERNAME
 * LOGIN_PASSWORD
-
 
 ## Run automation
 
@@ -76,5 +76,3 @@ uv run pytest
 * The current implementation defines the fixture scope as function, resulting in the teardown being executed after each individual test. Update the fixture to use a session scope so that the teardown is performed only once, after the completion of all tests within the session.
 * Some configuration values, such as the scan type selection, are currently hardcoded in the implementation. To enhance scalability and maintainability, refactor the design to define these values as enums or accept them as input parameters. 
 * Proceed with automation of test cases in order of defined priority.
-
-
